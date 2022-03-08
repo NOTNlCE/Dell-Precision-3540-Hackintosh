@@ -6,6 +6,15 @@
 
 - macOS Monterey 12.2.1
 
+## Hardware
+
+- i7-8650U
+- HD 620 / WX 2100
+- 32GB DDR4 RAM
+- 1080p Screen
+- DW1560 Wireless
+- 256GB SK Hynix NVMe SSD
+
 ## What Works
 
 - CPU + IGPU Power Management
@@ -31,6 +40,8 @@ This is a fork of: https://github.com/matule95/Dell-Precision-3540-Hackintosh
 With the release of the newly found spoof to enable the Lexa GPU core variant as a Polaris RX 550, we can now spoof our WX2100 device ID to utilize the Polaris drivers in macOS. It seems that software (Geekbench 5, most notably) is unable to utilize the GPU despite it being enabled. However, in this repo, it is enabled by default for testing purposes.
 
 An update to VoodooI2C has enabled functionality of the trackbad buttons as well as I2C gesture support.
+
+It is worth noting that the 512GB model of this machine ships with a Micron 512GB SSD that is NOT compatible with macOS and will cause panics at boot.
 
 SSDT patching is needed to enable Thunderbolt 3, though the port works as a Type-C port.
 
